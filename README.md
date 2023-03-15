@@ -70,7 +70,8 @@ https://user-images.githubusercontent.com/33378412/225215811-dd8135cd-3169-4fc4-
 `pip install noisereduce`
 
 # Usage
-See example notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/timsainb/noisereduce/blob/master/notebooks/1.0-test-noise-reduction.ipynb)
+[Audio Noise Removal And Reduction]
+(https://colab.research.google.com/github/timsainb/noisereduce/blob/master/notebooks/1.0-test-noise-reduction.ipynb)
 
 
 ### Simplest usage
