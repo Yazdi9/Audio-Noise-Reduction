@@ -20,6 +20,12 @@ The most recent version of noisereduce comprises two algorithms:
 
 https://user-images.githubusercontent.com/33378412/225215196-1582574a-4a2b-4e84-9e74-1421abac6b2a.mp4
 
+## Stationary Remove Noise 
+
+![download (7)](https://user-images.githubusercontent.com/33378412/225215590-4069fe2a-30c7-45dc-9790-c959623f9129.png)
+
+https://user-images.githubusercontent.com/33378412/225215657-e7bcf540-aba2-4866-8436-0f6d935f330c.mp4
+
 
 ### Steps of the Stationary Noise Reduction algorithm
 1. A spectrogram is calculated over the noise audio clip
@@ -44,6 +50,13 @@ https://user-images.githubusercontent.com/33378412/225215196-1582574a-4a2b-4e84-
 ![download (3)](https://user-images.githubusercontent.com/33378412/225215399-a6974489-3e1f-4a07-b13b-ee328756f63e.png)
 
 https://user-images.githubusercontent.com/33378412/225215358-9c0f84fc-8d7f-432d-83d7-244a4c5f6c0e.mp4
+
+## Non-Stationary Remove Noise 
+
+
+![download (8)](https://user-images.githubusercontent.com/33378412/225215842-91987da4-d75e-4d1e-bf13-a368e8c7fe3f.png)
+
+https://user-images.githubusercontent.com/33378412/225215811-dd8135cd-3169-4fc4-9fe6-437ecdce9097.mp4
 
 
 ### Steps of the Non-stationary Noise Reduction algorithm
