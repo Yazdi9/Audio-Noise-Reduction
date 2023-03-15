@@ -7,10 +7,19 @@ The most recent version of noisereduce comprises two algorithms:
 
 # Stationary Noise Reduction
 - The basic intuition is that statistics are calculated on  each frequency channel to determine a noise gate. Then the gate is applied to the signal.
-- This algorithm is based (but not completely reproducing) on the one [outlined by Audacity](https://wiki.audacityteam.org/wiki/How_Audacity_Noise_Reduction_Works) for the **noise reduction effect** ([Link to C++ code](https://github.com/audacity/audacity/blob/master/src/effects/NoiseReduction.cpp))
+- This algorithm is based (but not completely reproducing) on the one [outlined by Audacity](https://wiki.audacityteam.org/wiki/How_Audacity_Noise_Reduction_Works) for the **noise reduction effect** 
 - The algorithm takes two inputs: 
     1. A *noise* clip containing prototypical noise of clip (optional)
     2. A *signal* clip containing the signal and the noise intended to be removed
+
+# Demo 
+
+## Stationary Noise Reduction
+
+![download (1)](https://user-images.githubusercontent.com/33378412/225215165-1d07ea66-217e-49e9-999d-e7ad1c365eeb.png)
+
+https://user-images.githubusercontent.com/33378412/225215196-1582574a-4a2b-4e84-9e74-1421abac6b2a.mp4
+
 
 ### Steps of the Stationary Noise Reduction algorithm
 1. A spectrogram is calculated over the noise audio clip
@@ -25,7 +34,17 @@ The most recent version of noisereduce comprises two algorithms:
 # Non-stationary Noise Reduction
 - The non-stationary noise reduction algorithm is an extension of the stationary noise reduction algorithm, but allowing the noise gate to change over time. 
 - When you know the timescale that your signal occurs on (e.g. a bird call can be a few hundred milliseconds), you can set your noise threshold based on the assumption that events occuring on longer timescales are noise. 
-- This algorithm was motivated by a recent method in bioacoustics called Per-Channel Energy Normalization. 
+- This algorithm was motivated by a recent method in bioacoustics called Per-Channel Energy Normalization.
+
+# Demo 
+
+## Non-stationary Noise Reduction
+![download (2)](https://user-images.githubusercontent.com/33378412/225215380-ed49ad47-c62e-42fc-ad3a-a47bd4635cef.png)
+
+![download (3)](https://user-images.githubusercontent.com/33378412/225215399-a6974489-3e1f-4a07-b13b-ee328756f63e.png)
+
+https://user-images.githubusercontent.com/33378412/225215358-9c0f84fc-8d7f-432d-83d7-244a4c5f6c0e.mp4
+
 
 ### Steps of the Non-stationary Noise Reduction algorithm
 1. A spectrogram is calculated over the signal
